@@ -6,7 +6,6 @@ gem 'rails', '3.2.7'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
-gem 'execjs', :git => 'git@github.com:kaeff/execjs.git'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -20,7 +19,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'memcached-northscale'
+# gem 'memcached-northscale'
 # gem 'therubyrhino'
 
 # To use ActiveModel has_secure_password
