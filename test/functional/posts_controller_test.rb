@@ -22,6 +22,15 @@ class PostsControllerTest < ActionController::TestCase
     assert_equal 1, Post.count
   end
 
+  test "creating a post by means of a callback" do
+    post :status_callback, "build_result" => "passed", 
+                           "counter" => 1, 
+                           "project_name" => "goci/x-sample-rails-app-pg",
+                           "stage_name" => "Integration"
+    
+    assert_equal 1, Post.count
+  end
+
   test "getting a post form" do
     get :new
     assert_template 'new'

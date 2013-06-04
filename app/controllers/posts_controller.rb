@@ -18,4 +18,9 @@ class PostsController < ApplicationController
     render '_show', :locals => {:post => post}
   end
 
+  def status_callback
+    post = Post.create(:title => "#{params['project_name']} - #{params['build_result']}", :content => "The #{params['stage_name']} stage #{params['build_result']}" )
+    head (post.errors.any? ? :unprocessable_entity : :ok)
+  end
+
 end

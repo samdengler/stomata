@@ -15,7 +15,8 @@ Stomata::Application.routes.draw do
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   resources :posts, :only => [:index, :new, :create, :show]
-
+  match '/callback', :via => :post, :to => 'posts#status_callback'
+  
   # Sample resource route with options:
   #   resources :products do
   #     member do
