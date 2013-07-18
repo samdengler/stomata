@@ -21,7 +21,7 @@ end
 gem 'jquery-rails'
 
 group :showcase do
-  gem "sqlite3"
+  gem "builder"
 end
 
 # gem 'memcached-northscale'

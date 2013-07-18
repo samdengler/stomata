@@ -99,6 +99,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  builder
   jquery-rails
   pg
   rails (= 3.2.7)
