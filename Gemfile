@@ -19,6 +19,11 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+group :showcase do
+  gem "sqlite3"
+end
+
 # gem 'memcached-northscale'
 # gem 'therubyrhino'
 

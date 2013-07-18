@@ -15,3 +15,7 @@ test:
   adapter: postgresql
   database: stomata_test
   host: localhost
+
+showcase:
+  adapter: sqlite3
+  database: db/stomata_showcase.sqlite
