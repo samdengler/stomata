@@ -20,8 +20,8 @@ end
 
 gem 'jquery-rails'
 
-gem 'capybara',   '=1.1.3'
-gem 'capybara-webkit',   '=0.13.0'
+gem 'capybara',   '=2.1.0'
+gem 'capybara-webkit',   '=0.14.0'
 
 # gem 'memcached-northscale'
 # gem 'therubyrhino'
