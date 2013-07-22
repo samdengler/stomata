@@ -24,6 +24,8 @@ group :showcase do
   gem "builder"
 end
 
+gem 'capybara-webkit'
+
 # gem 'memcached-northscale'
 # gem 'therubyrhino'
 
