@@ -20,10 +20,6 @@ end
 
 gem 'jquery-rails'
 
-group :showcase do
-  gem "builder"
-end
-
 gem 'capybara-webkit',   '=0.13.0'
 
 # gem 'memcached-northscale'

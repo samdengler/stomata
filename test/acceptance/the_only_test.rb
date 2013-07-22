@@ -14,7 +14,7 @@ class TheOnlyTest < ActiveSupport::TestCase
     
     fill_in 'q', :with => 'monkey'
     click_link_or_button 'Google Search'
-    assert has_text? 'A monkey is a primate of the Haplorrhini suborder and simian infraorder, either an Old World monkey or a New World monkey, but excluding apes and humans.'
+    assert has_content? 'A monkey is a primate of the Haplorrhini suborder and simian infraorder, either an Old World monkey or a New World monkey, but excluding apes and humans.'
   end
   
   def teardown
