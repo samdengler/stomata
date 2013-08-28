@@ -9,7 +9,7 @@ class PostTest < ActiveSupport::TestCase
   end
 
   test "titles greater than thirty long should be invalid" do
-    p = Post.create(:content => 'trivial', :title => "a" * 31)
+    p = Post.create(:content => 'trivial', :title => "a" * 41)
     assert_match /Title is too long/, p.errors.full_messages.join
   end
 
